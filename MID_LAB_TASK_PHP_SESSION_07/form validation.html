@@ -1,0 +1,70 @@
+<html>
+<body>
+<title>php form validation</title>
+    
+	<h1>php form validation</h1>
+        <form method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>">
+    <table>
+	    <tr>
+		    <td>Name : </td>
+			<td><input type="text" name="name"/></td>
+		</tr>
+		<tr>
+		    <td>Email : </td>
+			<td><input type="email" name="email"/></td>
+		</tr>
+		<tr>
+		    <td>Website : </td>
+			<td><input type="website" name="website"/></td>
+		</tr>
+		<tr>
+		    <td>Comment : </td>
+			<td><textarea name="comment" rows="5" cols="40"/></textarea></td>
+		</tr>
+		<tr>
+		    <td>Gender : </td>
+			<td>
+			<input type="radio" name="gender" value="female"/>Female
+			<input type="radio" name="gender" value="Male"/>Male
+			</td>
+		</tr>
+		<tr>
+		    <td></td>
+			<td><input type="submit" name="submit" value="submit"/></td>
+		</tr>
+		</table>
+		</form>
+
+</body>
+</html>
+<?php
+     if($_SERVER["REQUEST_METHOD"]== "POST"){
+		       $name      = validate($_POST["name"]);
+			   $email     = validate($_POST["email"]);
+			   $website   = validate($_POST["website"]);
+			   $comment   = validate($_POST["comment"]);
+			   $gender    = validate($_POST["gender"]);
+			   
+			   
+			   echo "Name: " .$name."<br/>";
+			   echo "email: " .$email."<br/>";
+			   echo "website: " .$website."<br/>";
+			   echo "comment: " .$comment."<br/>";
+			   echo "gender: " .$gender;
+			   }
+			   
+			   function validate($data){
+			      $data =trim($data);
+				  $data = stripcslashes($data);
+			      $data = htmlspecialchars($data);
+				  return $data;
+			   }
+			      
+		  ?>
+		  
+
+
+
+
+
+
