@@ -4,7 +4,23 @@
    <title>Registration </title>
        <fieldset>
 	    <legend><b> Registration </b> </legend>
-		<form method="POST" action="Controller/sign_check.php">
+		<form method="POST" action="../Controller/sign_check.php">
 		  
 		  Name : <input type="text" name="username" width="100px" placeholder="Enter Name"> </input><br>
+          Email Address :<input type="email" name="email" width="100px" placeholder="Enter Your Email"> </input><br>
 		  Password :<input type="text" name="password" width="100px" placeholder="Enter Password"> </input><br>
+		  Confirm Password :<input type="text" name="password" width="100px" placeholder="Enter Password Again"> </input><br>
+		  
+		  <b>User Type </b> <br>
+		 
+		   <input type="radio" name="usertype" value="user"> User </input><br>
+		   <input type="radio" name="usertype" value="admin"> Admin </input><br>
+		   <input type="submit" name="submit" value="submit"> </input><br>
+		   <input type="reset">
+		   <a href="login.html">Sign In</a>
+</fieldset>
+</form>
+</body>
+</html>
+		  
+		   
