@@ -1,0 +1,31 @@
+h1{
+   color:blue;
+   font-size:70px;
+   background-color:white;
+   background-image: url("picture.jfif");
+ }
+ 
+ .c1{
+	 
+	 color:blue; 
+	 
+ }
+ #div{
+	 width: 500px;
+	 height: 500px;
+	 border: 2px blue;
+	 margin:0 auto;
+	 color:blue;
+	 background-color:white; 
+	 /*width: 100px;
+	 height: 100px;
+	 padding: 20px 10px;
+	 top:30px;
+	 left:20%;
+	 border:200px;*/
+     
+ }
+ d1{
+	position:left-side; 
+
+ }

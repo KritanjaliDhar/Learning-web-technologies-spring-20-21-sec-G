@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Account Opening Form</title>
+   </head>
+   <body bgcolor="skyblue">
+   <center>
+   <img src="logo.png" width="150px" height="150px" alt="LOGO">
+   <body>
+   <fieldset width="200px" height="200px">
+   <legend><h1>ACCOUNT OPENING FORM</h1></legend>
+   <table>
+      <form method="POST" action="../Controller/AccountOpeningCheck.php" >
+         <tr>
+		 <td>
+		 First name:<input type = "text" name = "first_name"/><br>
+		 </td>
+		 </tr>
+		 <tr>
+         <td>
+		 Last name: <input type = "text" name = "last_name"/><br>
+		 </td>
+		 </tr>
+		 <tr>
+         <td>
+         Account Type : <select type= "dropdown" name="dropdown">
+                        <option selected>Please Select</option>
+                        <option name="type" value = "saving_account" >Savings Account</option>
+                        <option name="type" value = "students_account">Salary Account</option>
+                        <option name="type" value = "DPS_account" >Fix deposit Account</option>
+
+                        </select>
+                        <br>
+         </td>
+         </tr>
+         <tr>
+		 <td>
+		 Transaction ID : <input type = "text" name = "tid" placeholder="ex:1234" /><br>
+		 </td>
+		 </tr>
+		 <tr>
+		 <td>
+         Monthly Salary: <input type = "text" name = "salary" placeholder="Taka"/>
+         <br>
+		 </td>
+		 </tr>
+		 
+		 <tr>
+		 <td>
+		 Gender: <input type = "radio" name = "gender"/>Male
+		         <input type = "radio" name = "gender" />Female
+         <br>
+		 </td>
+		 </tr>
+		 <tr>
+		 <td>
+		 Date of Birth: <input type="Date" Name="DOB"/>
+		<br>
+		</td>
+		 </tr>
+		<tr>
+		 <td>
+		Telephone Number: <input type="Telephone Number" Name="tpnumber"/>	
+        <br>
+		</td>
+		 </tr>
+		<tr>
+		 <td>
+		Email: <input type="Email" Name="Email"/><br>
+		 </td>
+		 </tr>
+		 <tr>
+		 <td>
+		 <fieldset>
+		 <legend>Address</legend>
+		 Road NO: <input type = "Real Number" name = "rnumber" placeholder="ex:1"/><br>
+	     House NO:  <input type = "Real number" name = "hnumber" placeholder="ex:1"/><br>
+         Street Name: <input type = "text" name = "Name" />
+		 <br>
+		 </fieldset>
+		 </td>
+		 </tr>
+		 
+		 <tr>
+		 <td>
+		 <input type = "submit" name = "submit" value = "Submit" />
+		 </td>
+		 </tr>
+		 </table>
+      </form>
+	  </fieldset>
+	  </center>
+   </body>
+	
+</html>
